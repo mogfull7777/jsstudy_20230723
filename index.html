@@ -1,0 +1,45 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width,
+              user-scalable=no, initial-scale=1.0,
+              maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="js_function.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>D-day</title>
+    </head>
+    <body>
+        <h1>D-Day</h1>
+        <div id="dDayContainer">
+
+            <div class="dDayChildContainer">
+                <span id="days">0</span>
+                <span>일</span>
+            </div>
+            <div class="dDayChildContainer">
+                <span id="hours">0</span>
+                <span>시간</span>
+            </div>
+            <div class="dDayChildContainer">
+                <span id="min">0</span>
+                <span>분</span>
+            </div>
+            <div class="dDayChildContainer">
+                <span id="sec">0</span>
+                <span>초</span>
+            </div>
+
+        </div>
+
+            <div id="dDaymessage"></div>
+
+        <div id="targetSelector">
+            <input id="targetYearInput" class="targetInput" /> -
+            <input id="targetMonthInput" class="targetInput" /> -
+            <input id="targetDateInput" class="targetInput" />
+        </div>
+        <button onclick="counterMaker()" id="startBtn">카운트다운 시작</button>
+    </body>
+</html>
